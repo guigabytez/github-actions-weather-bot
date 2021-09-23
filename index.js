@@ -34,4 +34,6 @@ const app = async () => {
     
 }
 // uses: actions/checkout@v1
+//  schedule: 
+//    - cron: '0 14 * * *'
 app()
