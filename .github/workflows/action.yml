@@ -15,7 +15,7 @@ jobs:
       name: Install Node
       uses: actions/setup-node@v1
       name: Install NPM Dependencies
-    -  run: npm install
+    -  run: npm i
       name: Run code
     -  run: node index.js
       env: 
