@@ -2,9 +2,9 @@ require('dotenv').config()
 const axios = require('axios')
 const Telegram = require('node-telegram-bot-api')
 
-const bot = new Telegram(process.env.TELEGRAM_API)
+const bot = new Telegram(process.env.TELEGRAM_TOKEN)
 
-weatherApi = process.env.WEATHER_API
+weatherApi = process.env.WEATHER_API_TOKEN
 
 const weatherUrl = new URL("https://api.openweathermap.org/data/2.5/weather")
 weatherUrl.searchParams.set('q','Cebu City, Philippines')
